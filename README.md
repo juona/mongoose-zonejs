@@ -25,9 +25,13 @@ There is a specific case when scenario #4 does not work - that's when I try to c
 
 For testing purposes I have created a user with access to a certain database in my test cluster:
 
-test-user
-UaFRNke93P7PzwXu
+- ```test-user```
+- ```UaFRNke93P7PzwXu```
 
 Use the following URL:
 
-mongodb+srv://test-user:UaFRNke93P7PzwXu@podbase-test-rhc1v.azure.mongodb.net/test-mongoose?retryWrites=true&w=majority
+```mongodb+srv://test-user:UaFRNke93P7PzwXu@podbase-test-rhc1v.azure.mongodb.net/test-mongoose?retryWrites=true&w=majority```
+
+The scenario which does not work as expected is reproduced using this command:
+
+```npm run test mongodb+srv://test-user:UaFRNke93P7PzwXu@podbase-test-rhc1v.azure.mongodb.net/test-mongoose?retryWrites=true&w=majority use-zone-js use-mongoose```
