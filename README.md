@@ -6,7 +6,7 @@ A demonstration of how Mongoose does not work well with Zone.js
 Run ```npm run test``` and provide a mongo connection URL, e.g.:
 
 ```
-npm run test mongodb://localhost:27017,localhost:27018,localhost:27019/podbase?replicaSet=rs0
+npm run test mongodb://localhost:27017,localhost:27018,localhost:27019/my-db?replicaSet=rs0
 ```
 
 The program accepts the following parameters:
