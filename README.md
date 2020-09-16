@@ -1,6 +1,12 @@
 # Mongoose and Zone.js
 A demonstration of how Mongoose does not work well with Zone.js
 
+# Workaround
+
+As a workaround to these problems you might get away with using a separate NodeJS process just for your ZoneJS stuff. In my case I only needed Angular's server-side rendering, which was quite simple to get working.
+
+The basic idea is that you run your ZoneJS code in a separate process and communicate with that process via messages. Demo code (untested, replicated from my own project) can be found in the `workaround` directory.
+
 # Usage
 
 Run ```npm run test``` and provide a mongo connection URL, e.g.:
